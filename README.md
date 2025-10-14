@@ -407,4 +407,4 @@ Younger, D. H. (1967). Recognition and parsing of context-free languages in time
 
 ---
 
-> **Informe (Revisar a continuación): [text](Documentación_Proyecto2_TDC.pdf)**
+> **Informe (Revisar a continuación): [Documentación_Proyecto2_TDC.pdf](Documentación_Proyecto2_TDC.pdf)**
