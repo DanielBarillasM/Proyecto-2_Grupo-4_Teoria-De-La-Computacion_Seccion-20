@@ -27,9 +27,6 @@
 * [Exportaciones (CNF / Parse Tree .txt / .dot)](#exportaciones-cnf--parse-tree-txt--dot)
 * [Casos de prueba automatizados](#casos-de-prueba-automatizados)
 * [Estadísticas y rendimiento](#estadísticas-y-rendimiento)
-* [Solución de problemas](#solución-de-problemas)
-* [Límites conocidos](#límites-conocidos)
-* [Ideas de mejora](#ideas-de-mejora)
 * [Licencia](#licencia)
 * [Referencias](#referencias)
 
@@ -73,10 +70,11 @@ Todo el flujo (incluidos los pasos del convertidor a CNF) se **muestra y explica
 ├─ .gitignore                          # Ignora .venv, __pycache__, etc.
 ├─ Proyecto No 2.pdf                   # Instrucciones del proyecto #2
 ├─ Ejemplo Proyecto 2.pdf              # Ejemplo teorico de como debe ser el proyecto #2
-├─ CNF.txt                             # Ejemplos de las gramáticas usadas, la que no está en CNF y la que si está en CNF.
+├─ CNF.txt                             # Ejemplos de las gramáticas usadas, la que si está en CNF.
 ├─ No_CNF.txt                          # Ejemplos de las gramáticas usadas, la que si está en CNF.
 ├─ LICENSE                             # MIT
-└─ README.md                           # Este archivo
+├─ README.md                           # Este archivo
+└─ Documentación_Proyecto2_TDC.pdf     # Documentación del proyecto #2 del grupo #4
 ```
 
 ---
@@ -369,23 +367,6 @@ La UI muestra **PASS/FAIL**, tiempos y **% de éxito**.
 
 ---
 
-## Solución de problemas
-
-* **“Palabras no reconocidas por la gramática”**
-  La app lista los tokens desconocidos y muestra el **vocabulario válido** (terminales de tipo `A→a` en la CNF). Ajusta tu entrada o la gramática.
-* **Cadena vacía**
-  Solo se acepta si el **símbolo inicial** tiene `→ ε` tras el pipeline.
-* **No aparece el árbol**
-  Ocurre si la oración no es aceptada o no hay backpointer para `start_symbol` en `T[0][n-1]`.
-* **`dot` no encontrado**
-  Instala Graphviz y agrega `dot` al PATH.
-* **Módulos faltantes**
-  Ejecuta: `pip install -r requirements.txt`.
-* **La app no abre el navegador**
-  Abre manualmente `http://localhost:8501`.
-
----
-
 ## Licencia
 
 Este proyecto se distribuye bajo la **Licencia MIT**. Ver `LICENSE`.
@@ -426,4 +407,4 @@ Younger, D. H. (1967). Recognition and parsing of context-free languages in time
 
 ---
 
-> **Informe (Revisar a continuación):**
+> **Informe (Revisar a continuación): [text](Documentación_Proyecto2_TDC.pdf)**
